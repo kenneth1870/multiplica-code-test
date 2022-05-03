@@ -74,3 +74,12 @@ group :development, :test do
   gem 'factory_bot_rails'
 end
 gem 'standard', group: [:development, :test]
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'shoulda-matchers'
+  gem 'database_cleaner-active_record'
+  gem 'standard'
+  gem 'pry-byebug'
+end
