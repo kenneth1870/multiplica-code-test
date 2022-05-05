@@ -20,8 +20,6 @@ bundle install
 
 ##### 3. Run the code or use docker
 
-Run the following commands to create and setup the database.
-
 ```ruby
 ruby app.rb
 ================================================================
