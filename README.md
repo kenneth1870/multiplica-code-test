@@ -2,9 +2,9 @@
 
 The setups steps expect following tools installed on the system.
 
-- Github
+- Docker
 - Ruby [2.6.3](https://github.com/organization/project-name/blob/master/.ruby-version#L1)
-- Rails [6.1.5.1](https://github.com/organization/project-name/blob/master/Gemfile#L12)
+
 
 ##### 1. Check out the repository
 
@@ -18,21 +18,21 @@ git clone https://github.com/kenneth1870/multiplica-code-test.git
 bundle install
 ```
 
-##### 3. Create and setup the database
+##### 3. Run the code or use docker
 
 Run the following commands to create and setup the database.
 
 ```ruby
-bundle exec rake db:create
-bundle exec rake db:setup
+ruby app.rb
+================================================================
+
+docker build -t app . > tmp/log.txt 
+docker run -t app . > tmp/output.txt 
+
 ```
 
-##### 4. Start the Rails server
-
-You can start the rails server using the command given below.
+##### 4. Run the test suite
 
 ```ruby
-bundle exec rails s
+rspec spec
 ```
-
-And now you can visit the site with the URL http://localhost:3000
